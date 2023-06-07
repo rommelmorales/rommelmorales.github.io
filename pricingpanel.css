@@ -1,0 +1,504 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  /*        
+    display: flex;
+    */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #e6e9ec;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #016ff9;
+}
+
+.pricing-features-items {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 2px solid #e1f1ff;
+}
+
+.pricing-features-items:last-child {
+  border-bottom: 2px solid #e1f1ff;
+}
+
+.pricing-price {
+  color: #016ff9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700px;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: cadetblue;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: cadetblue;
+  border-color: cadetblue;
+  color: white;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: cadetblue;
+  color: white;
+
+}
+
+@media (min-width:900px) {
+  .panel {
+    flex-direction: row;
+  }
+}
+
+.pricing-plan {
+  border-bottom: none;
+  border-right: 1px solid #e1f1ff;
+  padding: 25px 50px;
+
+}
+
+.pricing-plan:last-child {
+  border-right: none;
+}
+
+/*Contact Us section by Dee*/
+
+.contact {
+  background-color: white;
+  text-align: center;
+  margin: 0px 0px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.contact .icon-header{
+  color:cadetblue;
+  font-size: 16px;
+  font-weight: 700px;
+}
+.contact .cta-btn {
+  width: 10rem;
+  font-size: 18px;
+  border-style: solid;
+  background-color: cadetblue;
+  color: white;
+}
+.contact .contact-us-header {
+  color: #888;
+  align-items: center;
+  font-size: 30px;
+  padding: 10px 10px;
+}
+.contact p {
+  padding: 10px 10px;
+  color: #888;
+}
+.contact-card img h4 p {
+  justify-content: center;
+}
+.contact-card img {
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+}
+.contact-card h4 {
+  padding: 5px 0px;
+  color: #888;
+}
+.contact-card h4 p {
+  color: #888;
+  list-style: none;
+}
+.contact-card {
+  display: inline-block;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin: 5px 5px;
+}
+/* End Contact Us section by Dee */
+/* Footer section by Dee */
+.footer .footer-content .column-left .footer-link a {
+  color: grey;
+  text-decoration: none;
+}
+.footer .footer-content .footer-link a:hover {
+  color: cadetblue;
+}
+.footer .footer-content .column-right .connect {
+  color: grey;
+}
+.footer .footer-content .column-right .back a{
+  color: grey;
+}
+.footer .footer-content .column-right .back a:hover{
+  color:cadetblue;
+}
+/* End footer section by Dee */
+
+
+
+
+/*  Navigation Bar By Rommel */
+.navbar {
+  background-color: cadetblue;
+  width: 100%;
+  padding: 5px 0;
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 20px;
+
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 5%;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  /*background-color: aqua;
+    color: blue;*/
+}
+
+.navbar .menu li a {
+  display: flex;
+  color: white;
+  font-size: 25px;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+/*.logo a:hover, :active {
+    font-size: 250%;
+}
+
+.menu li a:hover{
+    font-size: 180%;
+}*/
+input[type=ckeckbox] {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  user-select: none;
+  font-size: 24px;
+}
+
+#checkbox_toggle {
+  display: none;
+  user-select: none;
+  font-size: 24px;
+}
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: cadetblue;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: block;
+    transition: 0.3s ease;
+  }
+
+  .menu li {
+    display: block;
+    transition: 0.3s ease;
+    position: relative;
+  }
+
+  .menu li a:hover {
+    background: rgb(224, 229, 230);
+    color: #555;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    color: antiquewhite;
+  }
+}
+
+/**NAV Button*******/
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 75px;
+  font-weight: 600;
+  margin: 10px 10px;
+  width: 100px;
+  padding: 10px 0;
+  box-shadow: 0 0 10px #8fd8ea;
+  transition: 0.4s;
+}
+
+.log {
+  background-color: #9dd1ff;
+  /*border: 2px solid rgba(104, 85, 224, 1); undecided*/
+}
+
+button:hover {
+  color: white;
+  width: ;
+  box-shadow: 0 0 2px white;
+  background-color: orange;
+}
+
+/*  END - Navigation Bar By Rommel */
+
+/*** Footer section: Yandi ***/
+.footer {
+  background-color: whitesmoke;
+  /*rgb(34, 32, 32)*/
+}
+
+.footer .footer-content {
+  display: flex;
+}
+
+.footer .column-right {
+  margin-left: 300px;
+}
+
+.footer .column-left {
+  margin-left: 20px;
+  margin-right: 100px;
+}
+
+.footer .footer-content {
+  color: grey;
+  padding: 30px;
+}
+
+.footer-content .a a {
+  color: tomato;
+  padding: 2px;
+  font-size: 14px;
+  font-family: 'grandir black', sans-serif;
+}
+
+.dee {
+  padding: 5px;
+  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+.footer-content a:hover {
+  color: black;
+}
+
+.connect {
+  display: inline;
+  color: black;
+  margin-left: 15px;
+}
+
+.icons img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.icons .b {
+  display: inline;
+  margin: 10px;
+}
+
+.space {
+  background-image: linear-gradient(to left, rgba(253, 226, 221), rgb(219, 223, 253));
+  height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.svg {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 160px;
+  text-indent: 120px;
+  padding-top: 20px;
+}
+
+.svg img {
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.back a {
+  margin-top: 30px;
+  margin-left: 300px;
+  color: tomato;
+}
+
+.back a:hover {
+  color: black;
+}
+
+/*** End Footer section: Yandi***/
+
+
+/*---About Section By Carlo--- */
+.about {
+  font-family: 'Montserrat', sans-serif;
+  background-color: ghostwhite;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.max-width-about {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 50px;
+  color: #888;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column-left {
+  width: 45%;
+}
+
+.column-left iframe {
+  height: 400px;
+  width: 450px;
+  border-radius: 30px
+}
+
+.column-right {
+  width: 55%;
+}
+
+.column-right p {
+  font-size: 18px;
+  text-align: justify;
+  color: #888;
+
+}
+
+.btn-about {
+  text-align: end;
+}
+
+.btn-learn-more {
+  background-color: cadetblue;
+  color: white;
+}
+
+@media (max-width:1104px) {
+  .column-left iframe {
+    height: 350px;
+    width: 350px
+  }
+}
+
+@media (max-width: 947px) {
+  .about-content {
+    width: 100%;
+    display: block;
+    position: center;
+  }
+
+  .column-left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .column-rigth p {
+    display: flex;
+    position: center;
+    margin: 0 auto 60px;
+  }
+}
+
+/*---END-About Section By Carlo--- */

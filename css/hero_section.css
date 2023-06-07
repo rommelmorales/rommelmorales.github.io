@@ -1,0 +1,284 @@
+html {
+  --scrollbarBG: #fefbfb;
+  --thumbBG: #999;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+* {
+  margin: 0;
+}
+
+.max-width-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header {
+  /*margin-top: 3rem; Rommel's comment-out para mawala yung margin sa navbar kapag naka {position:fixed}  */
+  margin-bottom: 3rem;
+  min-height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-text {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.line-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-in {
+  width: 9rem;
+  height: 0.4rem;
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+
+.sub-heading-text {
+  color: #555;
+  margin-top: 1.8rem;
+  margin-bottom: 3rem;
+  font-size: 18px;
+  text-align: center;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-hero {
+  background: cadetblue;
+  color: #fff;
+  border: #555 solid 2px;
+  font-size: 18px;
+  padding: .5rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.btn-hero:hover {
+  background: rgb(224, 229, 230);
+  color: #555;
+  border: #555 solid 2px;
+}
+
+.heading-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col-50 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 2rem;
+  margin-top: 10rem;
+  /*Rommel's comment - I add margin top 10rem para hindi umilamin sa navbar yung store*/
+}
+
+.col-50 img {
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 100px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 850px) {
+  * {
+    margin: 0;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .col-50 img {
+    margin-top: 0rem;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 100px;
+  }
+
+  .header-text {
+    font-size: 2.5rem;
+    text-align: start;
+  }
+
+  .sub-heading-text {
+    font-size: 20px;
+  }
+
+  .btn-hero {
+    font-size: 20px;
+  }
+
+  .col-50 {
+    width: 50%;
+    padding: 0 1rem;
+  }
+
+  .image {
+    justify-content: end;
+  }
+
+  .sub-heading-text {
+    text-align: start;
+  }
+
+  .line-out {
+    justify-content: start;
+  }
+
+  .hero-btn {
+    justify-content: start;
+  }
+}
+
+
+/* animations */
+.anim-to-top-slow {
+  animation: slideFromBottom 1s ease;
+}
+
+.anim-to-bottom-slow {
+  animation: slideFromTop 1s ease;
+}
+
+.anim-to-right-slow {
+  animation: slideFromLeft 1s ease;
+}
+
+.anim-to-left-slow {
+  animation: slideFromRight 2.5s ease;
+}
+
+.anim-to-top {
+  animation: slideFromBottom .5s ease;
+}
+
+.anim-to-bottom {
+  animation: slideFromTop .5s ease;
+}
+
+.anim-to-right {
+  animation: slideFromLeft .5s ease;
+}
+
+.anim-to-left {
+  animation: slideFromRight .5s ease;
+}
+
+.animateInfinite {
+  animation: animateInfinite 6s ease;
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-25%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(25%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(25%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes hiddenState {
+  0% {
+    overflow: hidden;
+  }
+
+  100% {
+    overflow: auto;
+  }
+}
+
+@keyframes animateInfinite {
+  0% {
+    transform: translateY(-25%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-25%);
+  }
+
+}
